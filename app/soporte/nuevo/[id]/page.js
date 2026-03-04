@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 export const dynamic = 'force-dynamic';
 
 export default async function NuevoTicketPage({ params }) {
-  const { id } = await params;
+  const { id } = params;
   const equipo = await Equipo.findByPk(id);
 
   if (!equipo) {
