@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 
 export default async function DetalleEquipoPage({ params }) {
-  const { id } = params;
+  const { id } = await params;
   const equipo = await Equipo.findByPk(id, {
     include: [{ model: Categoria }]
   });

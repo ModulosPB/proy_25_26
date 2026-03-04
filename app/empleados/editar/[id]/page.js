@@ -5,7 +5,7 @@ import { notFound } from 'next/navigation';
 export const dynamic = 'force-dynamic';
 
 export default async function EditarEmpleadoPage({ params }) {
-  const { id } = params;
+  const { id } = await params;
   const empleado = await Empleado.findByPk(id);
 
   if (!empleado) {

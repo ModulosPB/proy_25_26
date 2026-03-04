@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const dynamic = 'force-dynamic';
 
 export default async function DetalleEmpleadoPage({ params }) {
-  const { id } = params;
+  const { id } = await params;
   const empleado = await Empleado.findByPk(id);
 
   if (!empleado) {
