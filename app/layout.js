@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es">
       <body className="bg-gray-50 text-gray-900 min-h-screen">
-        <nav className="bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg">
+        <nav className="bg-linear-to-r from-blue-600 to-blue-700 shadow-lg">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-24">
               <div className="flex items-center gap-3">

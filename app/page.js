@@ -59,21 +59,21 @@ export default async function Dashboard() {
         <div className="card lg:col-span-2">
           <h3 className="text-lg font-bold text-gray-900 mb-6">Detalles de Inventario</h3>
           <div className="space-y-4">
-            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-transparent rounded-lg border border-blue-100">
+            <div className="flex items-center justify-between p-4 bg-linear-to-r from-blue-50 to-transparent rounded-lg border border-blue-100">
               <div>
                 <p className="text-sm text-gray-600">Asignados</p>
                 <p className="text-2xl font-bold text-blue-600">{equiposAsignados}</p>
               </div>
               <div className="text-4xl">✓</div>
             </div>
-            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-green-50 to-transparent rounded-lg border border-green-100">
+            <div className="flex items-center justify-between p-4 bg-linear-to-r from-green-50 to-transparent rounded-lg border border-green-100">
               <div>
                 <p className="text-sm text-gray-600">Disponibles</p>
                 <p className="text-2xl font-bold text-green-600">{equiposDisponibles}</p>
               </div>
               <div className="text-4xl">✓</div>
             </div>
-            <div className="flex items-center justify-between p-4 bg-gradient-to-r from-yellow-50 to-transparent rounded-lg border border-yellow-100">
+            <div className="flex items-center justify-between p-4 bg-linear-to-r from-yellow-50 to-transparent rounded-lg border border-yellow-100">
               <div>
                 <p className="text-sm text-gray-600">En Reparación</p>
                 <p className="text-2xl font-bold text-yellow-600">{equiposReparacion}</p>
